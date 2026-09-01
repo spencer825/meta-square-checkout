@@ -1,4 +1,4 @@
-const { Client, Environment } = require('@square/square');
+const { Client, Environment } = require('square');
 const { randomUUID } = require('crypto');
 
 const client = new Client({
