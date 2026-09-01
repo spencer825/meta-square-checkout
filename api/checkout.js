@@ -24,12 +24,10 @@ module.exports = async (req, res) => {
   try {
     const { result } = await client.checkoutApi.createPaymentLink({
       idempotencyKey: randomUUID(),
-      order: {
-        order: {
-          locationId: process.env.SQUARE_LOCATION_ID,
-          lineItems,
-        },
-      },
+    order: {
+  locationId: process.env.SQUARE_LOCATION_ID,
+  lineItems,
+},
     });
 
     res.redirect(302, result.paymentLink.url);
