@@ -1,7 +1,0 @@
-{
-  "name": "meta-square-checkout",
-  "version": "1.0.0",
-  "dependencies": {
-    "square": "^38.0.0"
-  }
-}
